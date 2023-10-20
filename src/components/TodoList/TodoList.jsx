@@ -1,7 +1,7 @@
 import React from 'react'
 import Todo from './Todo'
 
-const TodoList = ({ todos, majTodos }) => {
+const TodoList = ({ todos }) => {
     return (
         <>
             {
@@ -9,7 +9,7 @@ const TodoList = ({ todos, majTodos }) => {
                     return <Todo
                         key={todo.id}
                         todo={todo}
-                        majTodos={majTodos} />
+                    />
                 })
             }
         </>

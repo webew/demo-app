@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { TodoContext } from "./TodoListComponent";
 
-const Todo = ({ todo, majTodos }) => {
+const Todo = ({ todo }) => {
     console.log(todo);
+
+    const [majTodos] = useContext(TodoContext);
 
     function handleChange(id) {
         console.log("Change : ", id);
